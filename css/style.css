@@ -1,0 +1,109 @@
+.content {
+    line-height: 2px;
+    position: relative;
+    z-index: 3;
+}
+
+.video{
+    width: 300px;
+    max-width:100%;
+    margin:1.25em auto;
+}
+
+#desck {
+    text-align: right;
+    max-width: 87%;
+}
+
+#no {
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+    -webkit-transition: all 0.1s ease-out;
+}
+
+#yes {
+    position: absolute;
+    display: inline-block;
+    left: 60%;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    line-height: 5px;
+    z-index: 0;
+    background-image: url(../img/background.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    /* -webkit-filter: blur(0px);*/
+}
+
+.swal2-image {
+    object-fit: contain;
+}
+
+.swal2-title,
+.swal2-content {
+    color: #000 !important;
+}
+
+.swal2-popup {
+    border-radius: 15px !important;
+}
+
+header h2 {
+    font-family: 'Lovers Quarrel', cursive;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h4 {
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    header h2 {
+        max-width: 500px;
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 59px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    header h4 {
+        font-family: 'Pacifico';
+        text-align: center;
+        font-size: medium;
+        padding: 5px;
+    }
+    #no {
+        position: absolute;
+        display: inline-block;
+        left: 7%;
+        font-size: 14px;
+        padding: 3px;
+        -webkit-transition: all 0.1s ease-out;
+    }
+    #yes {
+        position: absolute;
+        display: inline-block;
+        left: 58%;
+        font-size: 14px;
+        padding: 3px;
+        -webkit-transition: all 0.3s ease-out;
+    }
+}
+
+.swal2-backdrop-show {
+    background-size: 200px 150px !important;
+}
